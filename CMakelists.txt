@@ -50,6 +50,7 @@ set(EXERCISES
     DM2
     AV1OBJ
     DM3
+    DM4
 )
 
 add_compile_options(-Wno-pragmas)
