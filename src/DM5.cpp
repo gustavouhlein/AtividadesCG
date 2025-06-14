@@ -592,7 +592,7 @@ int main() {
     setupThreePointLighting();
     
     cout << "=== CONTROLES ===" << endl;
-    cout << "W/A/S/D: Mover a camera" << endl;
+    cout << "W/A/S/D: Mover a câmera" << endl;
     cout << "MOUSE: Olhar ao redor" << endl;
     cout << "SCROLL: Zoom (FOV)" << endl;
     cout << "Tecla 1: Habilitar/Desabilitar Key Light" << endl;
