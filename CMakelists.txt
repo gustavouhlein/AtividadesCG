@@ -54,6 +54,7 @@ set(EXERCISES
     AV2
     DM5
     DM6
+    Final
 )
 
 add_compile_options(-Wno-pragmas)

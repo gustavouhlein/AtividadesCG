@@ -1,0 +1,66 @@
+# Configuração de Cena 3D
+# Linhas iniciadas com # são comentários
+# Formato: chave = valor
+
+[camera]
+position = 0.0, 2.0, 5.0
+yaw = -90.0
+pitch = 0.0
+fov = 45.0
+
+[lights]
+# Luz principal (Key Light)
+position = 2.0, 3.0, 2.0
+ambient = 0.1, 0.1, 0.1
+diffuse = 1.0, 1.0, 1.0
+specular = 1.0, 1.0, 1.0
+intensity = 1.0
+enabled = true
+end = light1
+
+# Luz de preenchimento (Fill Light)
+position = -2.0, 1.0, 1.0
+ambient = 0.05, 0.05, 0.05
+diffuse = 0.4, 0.4, 0.4
+specular = 0.3, 0.3, 0.3
+intensity = 0.6
+enabled = true
+end = light2
+
+# Luz de fundo (Back Light)
+position = 0.0, 2.0, -3.0
+ambient = 0.02, 0.02, 0.02
+diffuse = 0.6, 0.6, 0.6
+specular = 0.8, 0.8, 0.8
+intensity = 0.4
+enabled = true
+end = light3
+
+[objects]
+# Objeto principal - Suzanne
+name = Suzanne 1
+file = assets/Modelos3D/Suzanne.obj
+translation = 0.0, 0.0, 0.0
+rotation = 0.0, 180.0, 0.0
+scale = 1.0
+trajectory_points = 0.0,0.0,0.0; 2.0,1.0,0.0; 0.0,2.0,2.0; -2.0,1.0,0.0
+trajectory_speed = 1.5
+end = object1
+
+# Suzanne subdividida
+name = Suzanne 2
+file = assets/Modelos3D/SuzanneSubdiv1.obj
+translation = 3.0, 0.0, 0.0
+rotation = 0.0, 0.0, 0.0
+scale = 0.8
+end = object2
+
+# Cubo com trajetória
+name = Cubo
+file = assets/Modelos3D/Cube.obj
+translation = 0.0, 3.0, -2.0
+rotation = 0.0, 0.0, 0.0
+scale = 0.5
+trajectory_points = 0.0,3.0,-2.0; 1.5,3.0,-2.0; 0.0,3.0,-0.5; -1.5,3.0,-2.0
+trajectory_speed = 2.0
+end = object4
