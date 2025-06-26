@@ -1164,7 +1164,7 @@ void key_callback(GLFWwindow* window, int key, int, int action, int) {
                 if (!meshes.empty() && selectedMesh < meshes.size()) {
                     glm::vec3 newPoint = camera.Position + camera.Front * 2.0f;
                     meshes[selectedMesh].trajectory.addPoint(newPoint);
-                    cout << "Ponto adicionado à trajetoria do objeto: " << meshes[selectedMesh].name << endl;
+                    cout << "Ponto adicionado a trajetoria do objeto: " << meshes[selectedMesh].name << endl;
                 }
                 break;
                 
